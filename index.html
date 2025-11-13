@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinkTok - Your Pink Video Feed</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- File CSS Kita -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="main-header">
+            <i class="fas fa-camera"></i>
+            <h1>PinkTok</h1>
+            <i class="fas fa-tv"></i>
+        </header>
+
+        <!-- Area Feed Video Utama -->
+        <main class="video-feed" id="videoFeed">
+            <!-- Video 1 -->
+            <div class="video-container">
+                <video class="video-player" src="https://assets.mixkit.co/videos/preview/mixkit-girl-in-neon-sign-1232-large.mp4" loop muted></video>
+                
+                <div class="video-overlay">
+                    <div class="video-info">
+                        <a href="#" class="username">@pinklover</a>
+                        <p class="caption">Sini ikut joget bareng! 💖 #pinkvibes #dancetok</p>
+                        <div class="music-info">
+                            <i class="fas fa-music"></i>
+                            <span>Lagu Asik - Artis Populer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-actions">
+                    <button class="action-btn like-btn">
+                        <i class="far fa-heart"></i>
+                        <span>123K</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="far fa-comment"></i>
+                        <span>891</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="far fa-share"></i>
+                        <span>55</span>
+                    </button>
+                    <div class="profile-pic">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Profile">
+                        <div class="add-icon"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-container">
+                <video class="video-player" src="https://assets.mixkit.co/videos/preview/mixkit-woman-in-a-field-of-flowers-1197-large.mp4" loop muted></video>
+                
+                <div class="video-overlay">
+                    <div class="video-info">
+                        <a href="#" class="username">@flowerpower</a>
+                        <p class="caption">Hari yang cerah di tengah bunga 🌸 #nature #aesthetic</p>
+                        <div class="music-info">
+                            <i class="fas fa-music"></i>
+                            <span>Chill Vibes - Sunset Dreams</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-actions">
+                    <button class="action-btn like-btn">
+                        <i class="far fa-heart"></i>
+                        <span>88K</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="far fa-comment"></i>
+                        <span>450</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="far fa-share"></i>
+                        <span>22</span>
+                    </button>
+                    <div class="profile-pic">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="Profile">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 3 (contoh lagi) -->
+            <div class="video-container">
+                <video class="video-player" src="https://assets.mixkit.co/videos/preview/mixkit-woman-photographer-taking-a-photo-43848-large.mp4" loop muted></video>
+                
+                <div class="video-overlay">
+                    <div class="video-info">
+                        <a href="#" class="username">@capturepink</a>
+                        <p class="caption">Momen indah harus diabadikan 📸 #photography #pinkcamera</p>
+                        <div class="music-info">
+                            <i class="fas fa-music"></i>
+                            <span>Original Sound - @capturepink</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-actions">
+                    <button class="action-btn like-btn">
+                        <i class="far fa-heart"></i>
+                        <span>200K</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="far fa-comment"></i>
+                        <span>1.2K</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="far fa-share"></i>
+                        <span>99</span>
+                    </button>
+                    <div class="profile-pic">
+                        <img src="https://i.pravatar.cc/150?img=9" alt="Profile">
+                        <div class="add-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Navigasi Bawah -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-link active">
+                <i class="fas fa-home"></i>
+                <span>Beranda</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fas fa-compass"></i>
+                <span>Eksplor</span>
+            </a>
+            <a href="#" class="nav-link create-btn">
+                <div class="create-icon">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fas fa-envelope"></i>
+                <span>Kotak Masuk</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fas fa-user"></i>
+                <span>Profil</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- File JavaScript Kita -->
+    <script src="script.js"></script>
+</body>
+</html>
